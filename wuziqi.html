@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>五子棋</title>
+  <link rel="stylesheet" href="wuziqi.css">
+</head>
+
+<body>
+  <a href="" id="save" download=''><span>保存</span></a>
+  <div id="return"><span>返回</span></div>
+  <div id="result">
+    <div id="result_alert">
+      <div id="success"></div>
+      <div id="restart">再来一次</div>
+      <div id="set">生成棋谱</div>
+    </div>
+  </div>
+  <div class="left kuang">
+    <div class="wenzi"><h3>设置</h3></div>
+    <div class="changj">
+      <h5>场景设置</h5>
+    </div>
+    <input type="text" id="put" title="请输入300以上或者900以下的15的倍数">
+    <div class="changji" id="huiqi">
+      <h5>悔棋</h5>
+    </div>
+    <div class="changji" id="reshu">
+      <h5>认输</h5>
+    </div>
+    <div class="changji" id="reshu">
+      <h5>平局</h5>
+    </div>
+    <div class="changji" id="start">
+      <h5>开始游戏</h5>
+    </div>
+  </div>
+  <div class="right kuang">
+    <div class="wenzi">
+      <h3>功能</h3>
+    </div>
+      <div class="right_kuang">
+        <div class="changj" id="gongneng">
+          <h5>主要功能</h5>
+        </div>
+        <p>1>开始游戏：点击开始游戏</p>
+        <p>2>悔棋：点击悔棋，后退一步悔棋</p>
+        <p>3>平局：点击游戏平局</p>
+        <p>4>认输：点击游戏认输</p>
+        <div class="changj" id="rule">
+          <h5>主要规则</h5>
+        </div>
+        <p>最先在棋盘横向、竖向、斜向形成连续的相同色五个棋子的一方为胜。</p>
+        <pre>
+
+        </pre>
+      </div>
+  </div>
+  <div id="bodyer">
+    <audio src="./music/022.wav" id="audio1"></audio>
+    <audio src="./music/102.wav" id="audio2"></audio>
+    <audio src="./music/pipayu.mp3" id="audio"></audio>
+    <canvas id="canvas" width="450" height="450"></canvas>
+  </div>
+<script src='bower_components/jquery/dist/jquery.js'></script>
+<script src="js/wuziqi.js"></script>
+</body>
+</html>
